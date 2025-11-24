@@ -223,48 +223,71 @@
         </div>
     </main>
 
-      <!-- Калькулятор -->
-<div class="container mt-5 order-3">
-    <div class="row justify-content-center">
-        <div class="col-lg-14" >
-            <div id="calculator"  class="calculator card shadow">
-                <div class="text-white" >
-                     <h2 class="card-title h5 mb-4 fw-bold">Калькулятор</h2>
-                </div>
-                <div class="card-body">
-                    <form id="orderForm" class="needs-validation" novalidate>
-                        <div class="mb-3 form-section">
-                            <label for="productSelect" class="form-label fw-bold">Выберите товар:</label>
-                            <select class="form-select" id="productSelect" required>
-                                <option value="" disabled selected>-- Выберите товар --</option>
-                                 <option value="187">0.1 Flaws and all - 187$</option>
-                                    <option value="25">Play with earth! 0.03 album/cd+booklet - 25$ </option>
-                                    <option value="159">Un counted 0.0 Transparent Blue LP - 159$</option>
-                                    <option value="33">Debut Anniversary Limited Edition - 33$</option>
-                                    <option value="24">Summer Flows album/cd+booklet - 24$</option>
-                                    <option value="36">Play with earth! 0.03 EP album - 36$</option>
-                            </select>
-                            <div class="invalid-feedback">Пожалуйста, выберите товар</div>
-                        </div>
-                        <div class="mb-3 form-section">
-                            <label for="quantityInput" class="form-label fw-bold">Количество:</label>
-                            <input type="number" class="form-control" id="quantityInput" placeholder="Введите количество" min="1" required>
-                            <div class="invalid-feedback">Введите целое положительное число</div>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100 calculator-button">Рассчитать стоимость</button>
-                    </form>
-                    <div class="mt-4">
-                        <h3 class="h5">Стоимость заказа: <span id="totalCost" class="text-black">0</span> $</h3>
+    <!-- Calculator Section -->
+            <section class="col-12 order-3" id="calculator">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title h5 mb-4 fw-bold">Калькулятор стоимости услуги</h2>
+                        <form id="service-calculator">
+                            <div class="row g-3">
+                                <!-- Поле для ввода количества -->
+                                <div class="col-12">
+                                    <label for="quantity" class="form-label fw-bold">Количество:</label>
+                                    <input type="number" class="form-control" id="quantity" name="quantity" min="1" value="1" required>
+                                </div>
+
+                                <!-- Радиокнопки для выбора типа услуги -->
+                                <div class="col-12">
+                                    <span class="form-label fw-bold">Тип товара:</span>
+                                    <div class="mt-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input service-type" type="radio" name="serviceType" id="type1" value="basic" checked>
+                                            <label class="form-check-label" for="type1">Альбом (2400 руб/шт)</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input service-type" type="radio" name="serviceType" id="type2" value="premium">
+                                            <label class="form-check-label" for="type2">Мерч/одежда (5000 руб/шт)</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input service-type" type="radio" name="serviceType" id="type3" value="vip">
+                                            <label class="form-check-label" for="type3">Лимитированная футболка (4000 руб/шт)</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Селект для опций (только для премиум услуги) -->
+                                <div class="col-12 d-none" id="options-container">
+                                    <label for="options" class="form-label fw-bold">Дополнительные опции:</label>
+                                    <select class="form-select" id="options">
+                                        <option value="0">Без дополнительной опции</option>
+                                        <option value="5000">Опция "стикеры" (+500 руб)</option>
+                                        <option value="10000">Опция "носки" (+600 руб)</option>
+                                        <option value="18000">Опция "брелок" (+300 руб)</option>
+                                    </select>
+                                </div>
+
+                                <!-- Чекбокс для свойства (только для VIP услуги) -->
+                                <div class="col-12 d-none" id="property-container">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="property">
+                                        <label class="form-check-label fw-bold" for="property">Дополнительное свойство "стенд с группой" (+1500 руб)</label>
+                                    </div>
+                                </div>
+
+                                <!-- Блок для вывода результата -->
+                                <div class="col-12">
+                                    <div class="alert alert-info mt-3" id="result">
+                                        Стоимость: 1000 руб
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
-    </div>
-</div>
-
-
-        </div>
-    </main>
+</main>
+      
     
     <!-- Footer -->
     <footer class="bg-black text-white py-4 mt-4">
