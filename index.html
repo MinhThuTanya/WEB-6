@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wave to earth - Задание 5</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-black text-white py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <figure class="mb-0">
+                        <img class="logo" src="Mercedes-Logo.svg.png" alt="Wave to earth Logo" width="80">
+                    </figure>
+                </div>
+                <div class="col">
+                    <h1 class="h4 mb-1">Wave to earth</h1>
+                    <p class="mb-0 fst-italic">The waves will take us far away</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
+        <div class="container">
+            <ul class="navbar-nav justify-content-center w-100">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#hyperlinks">Ссылки</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#model-table">Альбомы и дискография</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#contact-form">Форма</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-4">
+        <div class="row g-4">
+            <!-- Links Section -->
+            <section class="col-12 order-2 order-lg-1" id="hyperlinks">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title h5 mb-4 fw-bold">Полезные ссылки</h2>
+                        <ol class="list-unstyled">
+                            <li class="border-bottom py-2"><a href="http://kubsu.ru/" class="d-block text-decoration-none">Абсолютная ссылка на kubsu.ru (HTTP)</a></li>
+                            <li class="border-bottom py-2"><a href="https://kubsu.ru/" class="d-block text-decoration-none">Абсолютная ссылка на kubsu.ru (HTTPS)</a></li>
+                            <li class="border-bottom py-2">Ссылка-изображение: <a href="https://wave-to-earth.com/"><img src="avto.jfif" alt="Официальный сайт Wave to earth" class="img-fluid mt-2" style="max-width: 150px;"></a></li>
+                            <li class="border-bottom py-2"><a href="internal-page.html" class="d-block text-decoration-none">Сокращенная ссылка на внутреннюю страницу</a></li>
+                            <li class="border-bottom py-2"><a href="index.html" class="d-block text-decoration-none">Сокращенная ссылка на главную страницу</a></li>
+                            <li class="border-bottom py-2"><a href="#contact-form" class="text-decoration-none">Ссылка на фрагмент текущей страницы (форма)</a></li>
+                            <li class="border-bottom py-2"><a href="https://www.kubsu.ru/ru/search?keys=образование&category=8&year=2023" class="d-block text-decoration-none">Ссылка с тремя параметрами в URL</a></li>
+                            <li class="border-bottom py-2"><a href="https://www.kubsu.ru/ru/node/38730?id=12345" class="d-block text-decoration-none">Ссылка с параметром id в URL</a></li>
+                            <li class="border-bottom py-2"><a href="current-page.html" class="d-block text-decoration-none">Относительная ссылка на страницу в текущем каталоге</a></li>
+                            <li class="border-bottom py-2"><a href="about/about-page.html" class="d-block text-decoration-none">Относительная ссылка на страницу в каталоге about</a></li>
+                            <li class="border-bottom py-2"><a href="../LUP-page.html" class="d-block text-decoration-none">Относительная ссылка на страницу уровнем выше</a></li>
+                            <li class="border-bottom py-2"><a href="../../LUPUP.html" class="d-block text-decoration-none">Относительная ссылка на страницу двумя уровнями выше</a></li>
+                            <li class="border-bottom py-2">Контекстная ссылка: <p class="mt-2">Это абзац текста, в котором находится <a href="https://kubsu.ru" class="text-decoration-none">контекстная ссылка</a> на сайт КубГУ.</p></li>
+                            <li class="border-bottom py-2"><a href="https://en.wikipedia.org/wiki/Wave_to_earth#History" class="d-block text-decoration-none">Ссылка на фрагмент страницы стороннего сайта (Wikipedia - история Wave to earth)</a></li>
+                            
+                            <li class="border-bottom py-2">
+                                <h3 class="h6 mt-3 mb-2">Ссылки из областей картинки</h3>
+                                <div class="text-center">
+                                    <img src="prhotomap.png" alt="Пример изображения с областями" usemap="#examplemap" class="img-fluid object-fit-cover" style="height: 200px;">
+                                    <map name="examplemap">
+                                        <area shape="rect" coords="230,0,500,400" href="https://www.youtube.com/channel/UCwave_to_earth" alt="Прямоугольная область" title="YouTube канал">
+                                        <area shape="circle" coords="100,100,150" href="https://wave-to-earth.com/" alt="Круглая область" title="Официальный сайт">
+                                    </map>
+                                </div>
+                            </li>
+                            
+                            <li class="border-bottom py-2"><a href="" class="text-decoration-none">Ссылка с пустым href</a></li>
+                            <li class="border-bottom py-2"><a class="text-decoration-none">Ссылка без href</a></li>
+                            <li class="border-bottom py-2"><a href="https://kubsu.ru" rel="nofollow" class="text-decoration-none">Ссылка, по которой запрещен переход поисковикам</a></li>
+                            <li class="border-bottom py-2"><a href="https://kubsu.ru" rel="noindex" class="text-decoration-none">Ссылка, запрещенная для индексации поисковиками</a></li>
+
+                            <li class="border-bottom py-2">
+                                <h3 class="h6 mt-3 mb-2">Нумерованный список ссылок с подписями title</h3>
+                                <ol>
+                                    <li class="mb-1"><a href="https://wave-to-earth.com/discography" title="Выпущенные альбомы (дискография)" class="text-decoration-none">Дискография</a></li>
+                                    <li class="mb-1"><a href="https://wavetoearthmerchs.com/" title="Магазин с мерчем Wave to Earth" class="text-decoration-none">Мерч</a></li>
+                                    <li class="mb-1"><a href="https://wave-to-earth.com/tour" title="Тур" class="text-decoration-none">Тур</a></li>
+                                </ol>
+                            </li>
+
+                            <li class="border-bottom py-2"><a href="ftp://example.com/file.txt" class="text-decoration-none">Ссылка на файл на сервере FTP с авторизацией</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Table Section -->
+            <section class="col-12 order-1 order-lg-2" id="model-table">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title h5 mb-4 fw-bold">Альбомы и дискография</h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-hover text-center align-middle">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Название альбома</th>
+                                        <th>Количество треков</th>
+                                        <th>Год выпуска</th>
+                                        <th>Количество слушателей</th>
+                                        <th>Примечания</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="fw-bold">play with earth! 0.03</td>
+                                        <td>7</td>
+                                        <td>2024</td>
+                                        <td>1,1 млн слушателей</td>
+                                        <td>Альбом в жанрах софт-рока, инди-рока и дрим-поп музыки</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">0.1 flaws and all</td>
+                                        <td>14</td>
+                                        <td>2023</td>
+                                        <td>33,3 млн слушателей</td>
+                                        <td>Исследует, что значит быть человеком, использует символизм природы</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">summer flows 0.02</td>
+                                        <td>5</td>
+                                        <td>2020</td>
+                                        <td>540 тыс слушателей</td>
+                                        <td>Летнее звучание с элементами инди-попа</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">wave 0.01</td>
+                                        <td>6</td>
+                                        <td>2020</td>
+                                        <td>300 тыс слушателей</td>
+                                        <td>Лоу-фай, джазовая игра на барабанах, инди-поп, инди-рок</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Form Section -->
+            <section class="col-12 order-3" id="contact-form">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title h5 mb-4 fw-bold">Форма обратной связи</h2>
+                        <form id="wave-form" action="#" method="POST">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <label for="name" class="form-label fw-bold">Имя:</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="phone" class="form-label fw-bold">Телефон:</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" required pattern="^\+7\d{10}$" placeholder="+79999999999">
+                                </div>
+                                <div class="col-12">
+                                    <label for="email" class="form-label fw-bold">Email:</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="birthdate" class="form-label fw-bold">Дата рождения:</label>
+                                    <input type="date" class="form-control" id="birthdate" name="birthdate" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <span class="form-label fw-bold">Пол:</span>
+                                    <div class="mt-2">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                                            <label class="form-check-label" for="male">Мужской</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                                            <label class="form-check-label" for="female">Женский</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="languages" class="form-label fw-bold">Любимый язык программирования:</label>
+                                    <select class="form-select" multiple id="languages" name="languages[]">
+                                        <option value="pascal">Pascal</option>
+                                        <option value="python">Python</option>
+                                        <option value="c++">C++</option>
+                                        <option value="c">C</option>
+                                        <option value="javascript">JavaScript</option>
+                                        <option value="php">PHP</option>
+                                        <option value="java">Java</option>
+                                        <option value="haskell">Haskell</option>
+                                        <option value="clojure">Clojure</option>
+                                        <option value="prolog">Prolog</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="bio" class="form-label fw-bold">Биография:</label>
+                                    <textarea class="form-control" id="bio" name="bio" required minlength="10" rows="4" placeholder="Расскажите о себе..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="agreement" name="agreement" required>
+                                        <label class="form-check-label fw-bold" for="agreement">Согласен с обработкой персональных данных</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-dark w-100">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+      <!-- Калькулятор -->
+<div class="container mt-5 order-3">
+    <div class="row justify-content-center">
+        <div class="col-lg-14" >
+            <div id="calculator"  class="calculator card shadow">
+                <div class="text-white" >
+                     <h2 class="card-title h5 mb-4 fw-bold">Калькулятор</h2>
+                </div>
+                <div class="card-body">
+                    <form id="orderForm" class="needs-validation" novalidate>
+                        <div class="mb-3 form-section">
+                            <label for="productSelect" class="form-label fw-bold">Выберите товар:</label>
+                            <select class="form-select" id="productSelect" required>
+                                <option value="" disabled selected>-- Выберите товар --</option>
+                                 <option value="187">0.1 Flaws and all - 187$</option>
+                                    <option value="25">Play with earth! 0.03 album/cd+booklet - 25$ </option>
+                                    <option value="159">Un counted 0.0 Transparent Blue LP - 159$</option>
+                                    <option value="33">Debut Anniversary Limited Edition - 33$</option>
+                                    <option value="24">Summer Flows album/cd+booklet - 24$</option>
+                                    <option value="36">Play with earth! 0.03 EP album - 36$</option>
+                            </select>
+                            <div class="invalid-feedback">Пожалуйста, выберите товар</div>
+                        </div>
+                        <div class="mb-3 form-section">
+                            <label for="quantityInput" class="form-label fw-bold">Количество:</label>
+                            <input type="number" class="form-control" id="quantityInput" placeholder="Введите количество" min="1" required>
+                            <div class="invalid-feedback">Введите целое положительное число</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 calculator-button">Рассчитать стоимость</button>
+                    </form>
+                    <div class="mt-4">
+                        <h3 class="h5">Стоимость заказа: <span id="totalCost" class="text-black">0</span> $</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-black text-white py-4 mt-4">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <p class="mb-1">Wave to earth</p>
+                    <p class="mb-1">Фам Минь Тхы</p>
+                    <p class="mb-0"><a href="#" class="text-decoration-none">Вернуться наверх</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="script.js" defer></script>
+      <!-- Calculator JS -->
+    <script src="calk.js"></script>
+
+     <script>
+        document.getElementById('mercedes-form').addEventListener('submit', function(event) {
+            const phoneInput = document.getElementById('phone');
+            const phoneValue = phoneInput.value.trim();
+
+            if (!phoneValue.startsWith('+7') || phoneValue.length !== 12) {
+                event.preventDefault();
+                alert('Телефон должен начинаться с +7 и содержать 10 цифр после него');
+                phoneInput.focus();
+                return false;
+            }
+
+            const digitOnly = phoneValue.substring(2);
+            if (!/^\d{10}$/.test(digitOnly)) {
+                event.preventDefault();
+                alert('После +7 должны быть только цифры');
+                phoneInput.focus();
+                return false;
+            }
+        });
+    </script>
+    
+</body>
+</html>
